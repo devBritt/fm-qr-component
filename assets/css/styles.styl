@@ -1,9 +1,81 @@
 // variables
+// colors
+dark-navy = hsl(218, 44%, 22%)
+gray-blue = hsl(220, 15%, 55%)
+light-gray = hsl(212, 45%, 89%)
 
+// text
+reg-weight = 400
+bold-weight = 700
+
+// 22px
+head-text = 1.375rem
+// 15px
+body-text = 0.938rem
+
+// border radius
+radius-lg = 1.25rem
+radius-sm = 0.625rem
 
 // styles
 .attribution
   font-size 11px
   text-align center
+  color dark-navy
   & >a
-    color hsl(228, 45%, 44%)
+    color hsl(216, 95%, 58%)
+    text-decoration none
+
+body
+  background-color light-gray
+  display flex
+  flex-direction column
+  align-items center
+
+main
+  flex 1
+  display flex
+  flex-direction column
+  justify-content center
+
+footer
+  width 100%
+  height 2rem
+
+h1
+p
+.attribution
+.attribution a
+  font-family 'Outfit', sans-serif
+  text-align center
+
+h1
+  font-size head-text
+  color dark-navy
+
+p
+  font-size body-text
+  color gray-blue
+
+.card
+  width 320px
+  padding 16px
+  background-color white
+  border-radius radius-lg
+
+.card-image
+  width 288px
+  height 288px
+  border-radius radius-sm
+  background-image url(../images/image-qr-code.png)
+  background-size cover
+
+.card-text > h1
+  margin-bottom 16px
+  
+.card-text > p
+  padding 0 12px
+
+.card-image
+.card-text > p
+  margin-bottom 24px
